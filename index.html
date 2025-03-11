@@ -1,5 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    .shadow-effect {
+        background: #fff;
+        padding: 20px;
+        border-radius: 4px;
+        text-align: center;
+        border: 1px solid #ECECEC;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+    }
+
+    #customers-testimonials .shadow-effect p {
+        font-family: inherit;
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 0 0 17px 0;
+        font-weight: 300;
+    }
+
+    .testimonial-name {
+        margin: -17px auto 0;
+        display: table;
+        width: auto;
+        background: #7033f1;
+        padding: 9px 35px;
+        border-radius: 100px;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+    }
+
+    #customers-testimonials .item {
+        text-align: center;
+        padding: 50px;
+        margin-bottom: 80px;
+        opacity: .2;
+        -webkit-transform: scale3d(0.8, 0.8, 1);
+        transform: scale3d(0.8, 0.8, 1);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #customers-testimonials .owl-item.active.center .item {
+        opacity: 1;
+        -webkit-transform: scale3d(1.0, 1.0, 1);
+        transform: scale3d(1.0, 1.0, 1);
+    }
+
+    .owl-carousel .owl-item img {
+        transform-style: preserve-3d;
+        max-width: 90px;
+        margin: 0 auto 17px;
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+        background: #3190E7;
+        transform: translate3d(0px, -50%, 0px) scale(0.7);
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot {
+        display: inline-block;
+    }
+
+    #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+        background: #3190E7;
+        display: inline-block;
+        height: 20px;
+        margin: 0 2px 5px;
+        transform: translate3d(0px, -50%, 0px) scale(0.3);
+        transform-origin: 50% 50% 0;
+        transition: all 250ms ease-out 0s;
+        width: 20px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
 <head>
     <meta charset="utf-8">
@@ -37,6 +121,8 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
+    <script type="text/javascript" src="https://googledrive.com/host/0B3Cp-IUVo0O9aTdtNGVUTjJ5WUU"></script>
+
 </head>
 
 <body class="index-page">
@@ -53,13 +139,14 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">Bienvenida</a></li>
-                    <li class="dropdown"><a href="views/about.html"><span>Juegos</span> <i
+                    <li class="dropdown"><a href="views/about.html"><span>Actividades</span> <i
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
                             <li><a href="#">Team</a></li>
                             <li><a href="#">Testimonials</a></li>
                             <li class="dropdown">
-                                <a href="#"><span>Deep Dropdown</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <a href="#"><span>Deep Dropdown</span><i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
                                 <ul>
                                     <li><a href="#">Deep Dropdown 1</a></li>
                                     <li><a href="#">Deep Dropdown 2</a></li>
@@ -163,6 +250,7 @@
         </section>
         <!-- /Hero Section -->
 
+        <!-- Imagenes informativas -->
         <section>
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -175,16 +263,16 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/hero-carousel/lsm-expresion.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/img/hero-carousel/lsm-expresion.jpg" class="d-block img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/hero-carousel/lsm-nounicidad.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/img/hero-carousel/lsm-nounicidad.jpg" class="d-block img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/hero-carousel/lsm-oficial.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/img/hero-carousel/lsm-oficial.jpg" class="d-block img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/hero-carousel/lsm-diversidad.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/img/hero-carousel/lsm-diversidad.jpg" class="d-block img-fluid" alt="...">
                     </div>
                 </div>
 
@@ -199,47 +287,176 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
         </section>
 
+        <!--  -->
+
+        <section>
+            <div id="gifsCarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" onclick="reproducirGif()">
+                        <div class="container align-items-center d-flex justify-content-center">
+                            <img id="gif" src="assets/img/gifs/giphy-noloop.gif" class="d-block img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center d-flex justify-content-center">
+                            <img src="assets/img/gifs/peace-out-peace-sign.gif" class="d-block img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center d-flex justify-content-center">
+                            <img src="assets/img/hero-carousel/lsm-oficial.jpg" class="d-block img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center d-flex justify-content-center">
+                            <img src="assets/img/hero-carousel/lsm-diversidad.jpg" class="d-block img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#gifsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gifsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <!-- <img id="gif" src="assets/img/gifs/giphy-noloop.gif" onclick="reproducirGif()"> -->
+
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="customers-testimonials" class="owl-carousel">
+
+                            <!--TESTIMONIAL 1 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-circle" src="https://uifaces.co/our-content/donated/bUkmHPKs.jpg"
+                                        alt="">
+                                    <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                        Completely synergize resource taxing relationships via premier niche markets.
+                                        Professionally cultivate.</p>
+                                </div>
+                                <div class="testimonial-name">EMILIANO AQUILANI</div>
+                            </div>
+                            <!--END OF TESTIMONIAL 1 -->
+                            <!--TESTIMONIAL 2 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-circle" src="https://randomuser.me/api/portraits/men/78.jpg" alt="">
+                                    <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                        Completely synergize resource taxing relationships via premier niche markets.
+                                        Professionally cultivate.</p>
+                                </div>
+                                <div class="testimonial-name">ANNA ITURBE</div>
+                            </div>
+                            <!--END OF TESTIMONIAL 2 -->
+                            <!--TESTIMONIAL 3 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-circle" src="https://uifaces.co/our-content/donated/ukegoVAy.jpg"
+                                        alt="">
+                                    <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                        Completely synergize resource taxing relationships via premier niche markets.
+                                        Professionally cultivate.</p>
+                                </div>
+                                <div class="testimonial-name">LARA ATKINSON</div>
+                            </div>
+                            <!--END OF TESTIMONIAL 3 -->
+                            <!--TESTIMONIAL 4 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-circle" src="https://uifaces.co/our-content/donated/ukegoVAy.jpg"
+                                        alt="">
+                                    <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                        Completely synergize resource taxing relationships via premier niche markets.
+                                        Professionally cultivate.</p>
+                                </div>
+                                <div class="testimonial-name">IAN OWEN</div>
+                            </div>
+                            <!--END OF TESTIMONIAL 4 -->
+                            <!--TESTIMONIAL 5 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-circle" src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
+                                    <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                        Completely synergize resource taxing relationships via premier niche markets.
+                                        Professionally cultivate.</p>
+                                </div>
+                                <div class="testimonial-name">MICHAEL TEDDY</div>
+                            </div>
+                            <!--END OF TESTIMONIAL 5 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF TESTIMONIALS -->
+
+
+        <!-- <img id="gif" src="assets/img/gifs/giphy.gif" onload="medirDuracion()" style="display:none;"> -->
+        <!-- <button onclick="reproducirGif()">Reproducir de nuevo</button> -->
 
     </main>
 
     <footer id="footer" class="footer dark-background">
 
         <div class="container footer-top">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" class="logo d-flex align-items-center">
-                <span class="sitename">LSM</span>
-              </a>
-              <h4>Universidad Michoacana de San Nicolás de Hidalgo</h4>
-              <div class="footer-contact pt-3">
-                <p>Avenida Francisco J. Múgica S/N. Ciudad Universitaria.</p>
-                <p>C.P. 58030, Morelia, Michoacán</p>
-              </div>
-              <div class="social-links d-flex mt-4">
-                <a href="https://twitter.com/cicumsnh"><i class="bi bi-twitter-x"></i></a>
-                <a href="https://www.facebook.com/UniversidadMichoacanadeSanNicolasdeHidalgoOficial"><i
-                    class="bi bi-facebook"></i></a>
-              </div>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">LSM</span>
+                    </a>
+                    <h4>Universidad Michoacana de San Nicolás de Hidalgo</h4>
+                    <div class="footer-contact pt-3">
+                        <p>Avenida Francisco J. Múgica S/N. Ciudad Universitaria.</p>
+                        <p>C.P. 58030, Morelia, Michoacán</p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://twitter.com/cicumsnh"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/UniversidadMichoacanadeSanNicolasdeHidalgoOficial"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+
             </div>
-    
-          </div>
         </div>
-    
+
         <div class="container copyright text-center mt-4">
-          <p><span>Copyright</span> © <strong class="px-1 sitename">LSM</strong> <span>para el aprendizaje.</span></p>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you've purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Diseñado por <span>Universidad Michoacana de San Nicolás de Hidalgo</span>
-          </div>
+            <p><span>Copyright</span> © <strong class="px-1 sitename">LSM</strong> <span>para el aprendizaje.</span></p>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                Diseñado por <span>Universidad Michoacana de San Nicolás de Hidalgo</span>
+            </div>
         </div>
-    
-      </footer>
+
+    </footer>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
@@ -262,6 +479,23 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        function reproducirGif() {
+            let gif = document.getElementById("gif");
+            let nuevoGif = document.createElement("img"); // Creamos una nueva imagen
+            nuevoGif.src = gif.src + "?t=" + new Date().getTime(); // Agregamos un parámetro único para evitar caché
+            nuevoGif.id = "gif"; // Mismo ID para mantener la referencia
+            nuevoGif.alt = "GIF animado";
+            nuevoGif.class = "d-block img-fluid";
+
+            nuevoGif.onclick = function () {
+                reproducirGif()
+            };
+            gif.replaceWith(nuevoGif); // Reemplazamos la imagen sin parpadeo
+        }
+    </script>
+
 
 </body>
 
